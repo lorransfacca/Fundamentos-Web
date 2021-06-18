@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
+    <title>Meu Perfil</title>
 <style>
     body
     {
         background-color: orangered;
+    }
+    h2
+    {
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:15px;
+        color: orange;
     }
     a
     {
@@ -18,6 +24,7 @@
 
     p
     {
+        font-family:Arial, Helvetica, sans-serif;
         font-size: 25px;
         border:10px solid;
         border-style:groove;
@@ -31,8 +38,36 @@
         border-style:groove;
         border-color:orange orange orange orange;
     }
+
+    button{
+        border:2px solid orange;
+        background-color: orangered;
+        color:orange;
+        border-radius:4px;
+        display:inline-block;
+        cursor:pointer;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight:bold;
+        font-size:13px;
+        padding:6px 10px;
+        text-decoration:none;
+    }
+
+    textarea
+    {
+        border:10px solid;
+        border-style:groove;
+        border-color:orange orange orange orange;
+    }
+
 </style>
 </head>
+<script>
+    let data=new Date();
+    let dia=data.getDate();
+    let mes=data.getMonth()+1;
+    let ano=data.getFullYear();
+</script>
 <body>
     <center>
         <div class="container">
@@ -43,14 +78,40 @@
                 Há 2 ano de conhecimento em Python na Mastertech,
             Cursando Desenvolvedor Full Stack Java Jr pela Generation Brasil.</p>
         
-   
+            <h2 font-size="20pt">&#9660;Conheça Meus Trabalhos Aqui! &#9660;</h2>
             <a href="https://www.linkedin.com/in/lorrans-facca-47631773/"> 
             <img src="din.png"width="25px" height="25px">
             </a>
             <a href="https://github.com/lorransfacca"> 
             <img src="git.png"width="30px" height="25px">
             </a>
-        </div>
+        
+            <section>        
+                <div class="form"><h2 font-size="20pt">&#9660;Deixe seu Comentario Aqui! &#9660;</h2>
+                 
+                        <form action="https://api.staticforms.xyz/submit" method="POST" class="card">
+                            <input type="hidden" name="accessKey" value="e6f1bc2b-1259-436e-911e-579510b8400e">
+                            <input type="hidden" name="redirectTo" value="Perfil.html">
+                            <br>
+                            <textarea name="$Assunto" id="textAreaAssunto" cols="50" rows="10"></textarea>
+                            <br>
+                            <span></span>
+                            <br>
+                            <button>Enviar<a href="Perfil.html"></a></button>
+                            <br>
+                            <br>
+                        </form>
+                </div>
+            </section>
+        </div> 
+    </center>
+    <br>
+    <center>
+        <button><a href="index.html">Voltar</a></button>
+    </center>
+
+    <center>
+        <h2> © 2021  -  <script>document.write( ano + "<br>");</script> Todos os Direitos Reservados<br>Desenvolvido por Lorrans Facca</h2>
     </center>
 </body>
 </html>
